@@ -1,0 +1,58 @@
+<!-- 
+    Case input = '54klasjhdjkl'
+    
+ -->
+
+ <script>
+     var back = true
+     while(back == true){
+
+         let check = false
+         while(check == false){
+             var menu= prompt("====== Menu====== \n Mau Menghitung apa? \n 1.Convert Hari ke Tahun \n 2. Convert detik ke Jam \n 3. Hitung luas segitiga \n 4.Hitung luas Trapesium \n 5.Exit ")
+             var nonDigit = /\D/
+             if(nonDigit.test(menu) == false){
+                if(menu > 0 && menu < 6){
+                    // alert('Lanjut')
+                    check = true
+                }else{
+                    alert('Masukan Angka 1 - 5 saja')
+                }
+             }
+             else{
+                 alert('Masukan Nomor Saja')
+             }
+        }
+        if(menu == 1){
+            check = false
+            while(check == false){
+                var hari = prompt('Masukan Hari ??')
+                if(nonDigit.test(hari) == false){ // - 
+                    check = true
+                }else{
+                    alert("hanya Masukan Angka saja dan lebih dari nols")
+                }
+            }
+            var tahun = Math.floor(hari / 360)
+            var sisatahun = hari%360
+            var bulan = Math.floor(sisatahun/30)
+            var sisaBulan = sisatahun %30
+            alert(hari + ' hari, sama dengan = ' + tahun + ' tahun , ' + bulan + ' bulan , ' + sisaBulan + ' hari.' )
+    
+    // convert hari
+        }else if(menu == 2){
+    // convert detik
+        }else if(menu == 3){
+    // Luas Segitiga
+        }else if(menu == 4){
+    // Luas Trapesium
+        }else if(menu == 5){
+            break;
+  
+        }
+        back = confirm('Mau kembali ke menu awal?')
+     }
+        alert('Thankyou')
+    
+</script>
+
