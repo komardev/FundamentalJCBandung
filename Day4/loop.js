@@ -169,30 +169,38 @@
 
 // console.log(bintang)
 
-var output= ''
-var i = 0
-var ganjil = 1
-while(i < 5){
-    // untuk space
-    var j = 0
-    while(j < 4-i){
-        output += ' '
-        j++
+function SegitigaMaker(baris){
+    var output= ''
+    var i = 0
+    var ganjil = 1
+    while(i < baris){
+        // untuk space
+        var j = 0
+        while(j < (baris-1)-i){
+            output += ' '
+            j++
+        }
+        // untuk bintang
+        var k = 0
+        while(k < ganjil){
+            output += '*'
+            k++
+        }
+    
+        ganjil += 2
+        output += '\n'
+        i++
     }
-    // untuk bintang
-    var k = 0
-    while(k < ganjil){
-        output += '*'
-        k++
-    }
-
-    ganjil += 2
-    output += '\n'
-    i++
+    console.log(output)
 }
-console.log(output)
 
 
+SegitigaMaker(5) 
+SegitigaMaker(10)
+
+
+
+alert('jhsadhgajd')
 
 
 
