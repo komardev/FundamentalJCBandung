@@ -77,32 +77,32 @@
 
 
 
-// var a = 5
-// var hasil = ''
-// if(a > 4 && a < 6){
-//     hasil = 'Good'
-//     if(a > 3 || a < 3){
-//         hasil += 'Great'
-//         if(a > 10 || a >= a){
-//             hasil = 'Perfect'
-//         }
-//     }
-// }else{
-//     hasil = 'Bad'
-// }
+a = 5
+hasil = ''
+if(a > 4 && a < 6):
+    hasil = 'Good'
+    if(a > 3 || a < 3):
+        hasil += 'Great'
+        if(a > 10 || a >= a):
+            hasil = 'Perfect'
+        
+    
+else:
+    hasil = 'Bad'
+
 
 // console.log(hasil)
 
 
 
-// var angka = 0
-// var hasil = 0
-// do{
-//     hasil+= angka
-//     angka--
-// }while(angka > 0)
+var angka = 0
+var hasil = 0
+do{
+    hasil+= angka
+    angka--
+}while(angka > 0)
 
-// console.log(angka)
+console.log(angka)
 
 
 
@@ -111,28 +111,28 @@
 // 
 
 
-// var hasil = 0
-// var nama = 'Purwadhika'
-// var hasil = 0
-// for(var i = 0 ; i < 10 ; i++ ){
-//     hasil = i
-// }
+var hasil = 0
+var nama = 'Purwadhika'
+var hasil = 0
+for(var i = 0 ; i < 10 ; i++ ){
+    hasil = i
+}
 
-// console.log(hasil)
+console.log(hasil)
 
 // // console.log(0+1+2+3+4+5+6+7+8+9)
 
 
 // // 9
 
-// var jumlah = 0
-// for(var i = 10 ; i > 0 ; i--){
-//     for(var j = 0 ; j <= i ; j--){
-//         jumlah += 1
-//         break
-//     }
-// }
-// console.log(jumlah) //10
+var jumlah = 0
+for(var i = 10 ; i > 0 ; i--){
+    for(var j = 0 ; j <= i ; j--){
+        jumlah += 1
+        break
+    }
+}
+console.log(jumlah) //10
 
 // 5 baris
 
