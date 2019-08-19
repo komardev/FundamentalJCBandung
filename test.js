@@ -131,22 +131,23 @@ function MaxNumber (angka1, angka2, angka3){
 }
 
 // MaxNumber(5,15,3)
-
+// 13 = number , sfikri = karakter
 
 function deleteString(string){
-    var bahan = string // 123fikri
-    var at = 0
-    var hasil = '' // 1
-    while(at < bahan.length){
-        if(bahan.charAt(at) >= '0' && bahan.charAt(at)  <= 9){
-            hasil += bahan.charAt(at)
+    var bahan = string // 1s3fikri
+    var at = 0 //2
+    var hasil = '' // 13
+    while(at <bahan.length){
+        var huruf = bahan.charAt(at)
+        if(huruf >= '0' && huruf  <= '9'){
+            hasil += huruf
         }
 
         at++
     }
     console.log(hasil)
 }
-deleteString('fikri123')
+// deleteString('fikrisdgsdgsdgsdgsdg123')
 
 
 // var nama = 'fikri123'
@@ -157,3 +158,51 @@ deleteString('fikri123')
 // }
 
 // console.log( )
+
+
+// dupString('fikri') => f\niikkkrrrriiiii
+// *\n**\n***
+// *
+// **
+// ***
+// f
+// ii
+// kkk
+// rrrr
+// iiiii
+
+function dupString(param1){ // 'fa'
+    var bahan = param1 // fa
+    var hasil = '' // faa
+    // i = 1
+    // j = 1
+    for(var i = 0 ; i < bahan.length ; i++){
+        for(var j = 0 ; j <= i ; j++){
+           hasil += bahan.charAt(i)
+        }
+        hasil += '\n'
+    }
+    console.log(hasil)
+
+}
+
+function dupString2(param1){ // faiasdasd
+    var hasil = ''
+    for(var i = 0 ; i < param1.length ; i++){
+        for(var j = 0 ; j <= i ; j++){
+            if(j == 0){
+                hasil += param1.charAt(i).toUpperCase()
+            }else{
+                hasil += param1.charAt(i)
+            }
+        }
+        if(i == param1.length - 1){
+            break;
+        }
+        hasil += '-'
+    }
+    console.log(hasil)
+}
+
+dupString2('faiosa')
+
