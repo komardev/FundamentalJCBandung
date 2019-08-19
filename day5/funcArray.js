@@ -42,3 +42,6 @@ getHargaParkir(7,12,3000)
 // 5. Function ngefilter string (hanya bisa integer) v
 // 6. Check Plat Nomor v
 
+
+
+// 
